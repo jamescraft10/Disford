@@ -26,6 +26,10 @@ app.get('/Styles/main.css', (req, res) => {
   res.sendFile(__dirname + "/Styles/main.css");
 });
 
+app.get('/Images/Logo.png', (req, res) => {
+  res.sendFile(__dirname + "/Images/math.png");
+});
+
 io.on('connection', (socket) => {
     socket.on('chat message', (msg) => {
         fs.appendFileSync(__dirname + '/db.txt', `<script>AddText(\'${msg}\');</script>`); // Puts Message In File

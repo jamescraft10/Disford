@@ -24,5 +24,15 @@ function AddText(msg) {
   var item = document.createElement('li');
   item.textContent = msg;
   messages.appendChild(item);
+  Bottom();
+}
+
+function Bottom() {
   window.scrollTo(0, document.body.scrollHeight);
+}
+
+let i = 0;
+if(i == 0) {
+  Bottom();
+  i++;
 }
