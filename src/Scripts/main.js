@@ -1,3 +1,15 @@
+document.onkeypress = function(evt) {
+  evt = evt || window.event;
+  var charCode = evt.keyCode || evt.which;
+  if(charCode == 92) {
+      Rediret();
+  }
+}
+
+function Rediret() {
+  window.location.href = window.location.href.replace("main", "");
+}
+
 var Name = prompt('Whats Your Name?');
 if (Name == "" || Name == null || Name == undefined) { Name = prompt('Whats Your Name?'); }
 
