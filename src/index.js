@@ -39,6 +39,10 @@ app.get('/Styles/math.css', (req, res) => {
 });
 
 app.get('/Images/Logo.png', (req, res) => {
+  res.sendFile(__dirname + "/Images/Image.png");
+});
+
+app.get('/Images/Math.png', (req, res) => {
   res.sendFile(__dirname + "/Images/math.png");
 });
 
