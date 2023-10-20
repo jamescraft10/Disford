@@ -51,6 +51,11 @@ io.on('connection', (socket) => {
         fs.appendFileSync(__dirname + '/db.txt', `<script>AddText(\'${msg}\');</script>`); // Puts Message In File
         io.emit('chat message', msg);
     });
+
+    socket.on('image', (image) => {
+      fs.appendFileSync(__dirname + '/db.txt', `<script>AddImage(\'${image}\');</script>`);
+      io.emit('image', image);
+    });
 });
 
 server.listen(3000, () => {
