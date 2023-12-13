@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <title>Clever | Portal</title>
-    <link rel="stylesheet" href="/Styles/main.css">
     <link rel="icon" href="/Images/Logo.png"/>
-  </head>
-  <body>
-    <div id="header">
-      <div id="title">Math Class</div>
-      <div id="logo"><img src="/Images/Math.png"></div>
+    <link rel="stylesheet" href="/Styles/index.css">
+</head>
+<body>
+    <span id="Title">Disford</span>
+    <div id="MessagesContainer" class="Box" onclick="window.location.href = './chat'">
+        <span class="BoxText">
+            Chat
+        </span>
     </div>
-    <ul id="messages"></ul>
-    <form id="form" action="">
-      <input id="input" autocomplete="off" />
-      <input type="file" id="file" accept="image/*" placeholder="Image" style="margin-top: 0.5em;">
-      <button>Send</button>
-    </form>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/Scripts/main.js"></script>
-  </body>
+
+    <div id="GamesContainer" class="Box" onclick="window.location.href = './games'">
+        <span class="BoxText">
+            Games
+        </span>
+    </div>
+
+    <div id="Version">Version 2.0</div>
+</body>
 </html>

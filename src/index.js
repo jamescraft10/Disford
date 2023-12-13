@@ -7,11 +7,15 @@ const io = new Server(server);
 const fs = require("fs");
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/Docs/main.html");
+  res.sendFile(__dirname + "/Docs/index.html");
 });
 
-app.get('/main', (req, res) => {
-  fs.readFile(__dirname + '/Docs/index.html', (err, data) => {
+app.get('/Styles/index.css', (req, res) => {
+  res.sendFile(__dirname + "/Styles/index.css");
+});
+
+app.get('/chat', (req, res) => {
+  fs.readFile(__dirname + '/Docs/chat.html', (err, data) => {
     if (err) throw err;
     res.write(data);
 
@@ -22,20 +26,28 @@ app.get('/main', (req, res) => {
   });
 });
 
-app.get('/Scripts/main.js', (req, res) => {
-  res.sendFile(__dirname + "/Scripts/main.js");
+app.get('/Scripts/chat.js', (req, res) => {
+  res.sendFile(__dirname + "/Scripts/chat.js");
 });
 
-app.get('/Scripts/math.js', (req, res) => {
-  res.sendFile(__dirname + "/Scripts/math.js");
+app.get('/Styles/chat.css', (req, res) => {
+  res.sendFile(__dirname + "/Styles/chat.css");
 });
 
-app.get('/Styles/main.css', (req, res) => {
-  res.sendFile(__dirname + "/Styles/main.css");
+app.get('/games', (req, res) => {
+  res.sendFile(__dirname + "/Docs/games.html");
 });
 
-app.get('/Styles/math.css', (req, res) => {
-  res.sendFile(__dirname + "/Styles/math.css");
+app.get('/Styles/games.css', (req, res) => {
+  res.sendFile(__dirname + "/Styles/games.css");
+});
+
+app.get('/games/artclass', (req, res) => {
+  res.sendFile(__dirname + "/Docs/artclass.html");
+});
+
+app.get('/games/typeracer', (req, res) => {
+  res.sendFile(__dirname + "/Docs/typeracer.html");
 });
 
 app.get('/Images/Logo.png', (req, res) => {
@@ -48,14 +60,18 @@ app.get('/Images/Math.png', (req, res) => {
 
 io.on('connection', (socket) => {
     socket.on('chat message', (msg) => {
-        fs.appendFileSync(__dirname + '/db.txt', `<script>AddText(\'${msg}\');</script>`); // Puts Message In File
+        fs.appendFileSync(__dirname + '/db.txt', `<script>a(\'${msg}\');</script>`); // Puts Message In File
         io.emit('chat message', msg);
     });
 
     socket.on('image', (image) => {
-      fs.appendFileSync(__dirname + '/db.txt', `<script>AddImage(\'${image}\');</script>`);
+      fs.appendFileSync(__dirname + '/db.txt', `<script>i(\'${image}\');</script>`);
       io.emit('image', image);
     });
+});
+
+app.get('*', function(req, res){
+  res.status(404).send('404 Not Found <a href=\"/\">Disford home</a>');
 });
 
 server.listen(3000, () => {
