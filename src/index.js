@@ -43,11 +43,23 @@ app.get('/Styles/games.css', (req, res) => {
 });
 
 app.get('/games/artclass', (req, res) => {
-  res.sendFile(__dirname + "/Docs/artclass.html");
+  res.sendFile(__dirname + "/Docs/Games/artclass.html");
 });
 
 app.get('/games/typeracer', (req, res) => {
-  res.sendFile(__dirname + "/Docs/typeracer.html");
+  res.sendFile(__dirname + "/Docs/Games/typeracer.html");
+});
+
+app.get('/games/1v1', (req, res) => {
+  res.sendFile(__dirname + "/Docs/Games/1v1.html");
+});
+
+app.get('/games/minecraft', (req, res) => {
+  res.sendFile(__dirname + "/Docs/Games/minecraft.html");
+});
+
+app.get('/games/fnaf', (req, res) => {
+  res.sendFile(__dirname + "/Docs/Games/fnaf.html");
 });
 
 app.get('/Images/Logo.png', (req, res) => {

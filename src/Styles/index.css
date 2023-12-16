@@ -57,6 +57,13 @@ body {
     color: rgb(69,69,69);
 }
 
+#Discord {
+    position: absolute;
+    bottom: 2%;
+    left: 7%;
+    color: rgb(69,69,69);
+}
+
 #Title {
     background: linear-gradient(120deg, #0038FF, #B800D6);
     -webkit-background-clip: text;
