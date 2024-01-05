@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Clever | Portal</title>
+    <link rel="stylesheet" href="/Styles/chat.css">
+    <link rel="icon" href="/Images/Logo.png"/>
+  </head>
+  <body>
+    <div id="header">
+      <div id="title">Disford</div>
+      <div id="logo"><img src="/Images/Math.png"></div></div>
+    <ul id="messages"></ul>
+    <form id="form" action="">
+      <input id="input" autocomplete="off" />
+      <input type="file" id="file" accept="image/*" placeholder="Image">
+      <button>Send</button>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/Scripts/chat.js"></script>
+  </body>
+</html>
