@@ -19,11 +19,12 @@
             Games
         </span>
     </div>
-
-    <div id="Version">Version 2.1</div>
+    
+    <div id="Version">Version 2.2</div>
+    <div id="UpdateLog" onclick="window.location.href = './Updates'">Update Log</div>
     <a id="Info" onclick="window.location.href = 'https:\/\/docs.google.com/document/d/1uIPm3yMTsrH78nXmU1BNrfTIFe8MNHG6bY8-nysA7gc/edit?usp=sharing'">Info (click)</a>
     <script>
-        const a = prompt("If you already opened then don't again | about:blank? (y for yes n for no)");
+        const a = prompt("about:blank? (y for yes)");
         if(a == "y") {
           const tab = window.open('about:blank', '_blank');
           const iframe = tab.document.createElement('iframe');

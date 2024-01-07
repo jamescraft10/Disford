@@ -5,6 +5,18 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+#Title {
+    background: linear-gradient(120deg, #0038FF, #B800D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 500%;
+}
+
 .Box {
     position: absolute;
     background-color: #191919;
@@ -36,51 +48,44 @@ body {
     cursor: pointer;
 }
 
-#MessagesContainer {
-    position: absolute;
-    margin-left: 67%;
-    margin-top: 10%;
-    transform: translate(-67%, 0%);
-}
-
-#GamesContainer {
+#a22Container {
     position: absolute;
     margin-left: 33%;
     margin-top: 10%;
     transform: translate(-33%, 0%);
 }
 
-#Version {
+#a21Container {
     position: absolute;
-    bottom: 2%;
-    left: 2%;
-    color: rgb(69,69,69);
+    margin-left: 67%;
+    margin-top: 10%;
+    transform: translate(-67%, 0%);
 }
 
-#Info {
+#a20Container {
     position: absolute;
-    bottom: 2%;
-    left: 7%;
-    color: rgb(69,69,69);
-    cursor: pointer;
+    margin-left: 33%;
+    margin-top: 21%;
+    transform: translate(-33%, 0%);
 }
 
-#UpdateLog {
+#a10Container {
     position: absolute;
-    bottom: 2%;
-    left: 12%;
-    color: rgb(69,69,69);
-    cursor: pointer;
+    margin-left: 67%;
+    margin-top: 21%;
+    transform: translate(-67%, 0%);
 }
 
-#Title {
-    background: linear-gradient(120deg, #0038FF, #B800D6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#aIndevContainer {
     position: absolute;
-    text-align: center;
-    margin-top: 1%;
-    margin-left: 50%;
-    transform: translate(-50%, 0%);
-    font-size: 500%;
+    margin-left: 33%;
+    margin-top: 32%;
+    transform: translate(-33%, 0%);
+}
+
+#aBackContainer {
+    position: absolute;
+    margin-left: 67%;
+    margin-top: 32%;
+    transform: translate(-67%, 0%);
 }

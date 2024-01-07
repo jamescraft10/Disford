@@ -1,4 +1,4 @@
-// npm i express socket.io http-proxy-middleware
+// npm i express socket.io
 const express = require('express');
 const app = express();
 const http = require('http');

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#Title {
+    background: linear-gradient(120deg, #0038FF, #B800D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 500%;
+}
+
+#Container {
+    color: white;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#Header {
+    font-size: 300%;
+}
+
+.Normal {
+    font-size: 200%;
+}
