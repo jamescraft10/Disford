@@ -53,14 +53,16 @@ body {
 #Version {
     position: absolute;
     bottom: 2%;
-    left: 2%;
+    margin-left: 2%;
+    transform: translate(-2%, 0%);
     color: rgb(69,69,69);
 }
 
 #Info {
     position: absolute;
     bottom: 2%;
-    left: 7%;
+    margin-left: 10%;
+    transform: translate(-10%, 0%);
     color: rgb(69,69,69);
     cursor: pointer;
 }
@@ -68,7 +70,8 @@ body {
 #UpdateLog {
     position: absolute;
     bottom: 2%;
-    left: 12%;
+    margin-left: 16%;
+    transform: translate(-16%, 0%);
     color: rgb(69,69,69);
     cursor: pointer;
 }
