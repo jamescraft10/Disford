@@ -99,11 +99,18 @@ body {
     transform: translate(-33%, -32%);
 }
 
-#BackContainer {
+#BirdContainer {
     position: absolute;
     margin-left: 67%;
     margin-top: 32%;
     transform: translate(-67%, -32%);
+}
+
+#BackContainer {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 43%;
+    transform: translate(-50%, -43%);
 }
 
 #Version {

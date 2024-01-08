@@ -50,19 +50,24 @@ body {
     transform: translate(-33%, 0%);
 }
 
+#ProxyContainer {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 21%;
+    transform: translate(-50%, 0%);
+}
+
 #Version {
     position: absolute;
     bottom: 2%;
-    margin-left: 2%;
-    transform: translate(-2%, 0%);
+    left: 2%;
     color: rgb(69,69,69);
 }
 
 #Info {
     position: absolute;
     bottom: 2%;
-    margin-left: 10%;
-    transform: translate(-10%, 0%);
+    left: 7%;
     color: rgb(69,69,69);
     cursor: pointer;
 }
@@ -70,8 +75,7 @@ body {
 #UpdateLog {
     position: absolute;
     bottom: 2%;
-    margin-left: 16%;
-    transform: translate(-16%, 0%);
+    left: 12%;
     color: rgb(69,69,69);
     cursor: pointer;
 }
