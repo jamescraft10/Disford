@@ -1,0 +1,128 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-size: xx-large;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900; /* 100-900 */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1;
+
+    background-color: black;
+    color: white;
+}
+
+#Content {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#MainText {
+    margin-left: 10%;
+    margin-top: 6%;
+    width: 50%;
+    height: 50%;
+}
+
+#Title {
+    margin: 0;
+}
+
+#textChange {
+    background: -webkit-linear-gradient(45deg, #0b00e4, #00ff95 80%);
+    width: fit-content;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Subtext {
+    line-height: -.5;
+    font-size: large;
+    font-weight: 500;
+    color: #303030;
+}
+
+#GithubText {
+    text-decoration: none;
+    font-size: large;
+}
+
+.AuthButton {
+    width: 5.7vw;
+    height: 4.5vh;
+    margin-top: 2vh;
+
+    background-color: #0e0e0e;
+    color: #eaeaea;
+    border: 2px solid #595959;
+    border-radius: 3px;
+
+    font-size: medium; /* 0.5em */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* 100-900 */
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    line-height: 1;
+
+    transition: 100ms;
+}
+
+.AuthButton:hover {
+    background-color: #040404;
+}
+
+.AuthButton:active {
+    background-color: #010101;
+}
+
+@media only screen and (max-width: 1250px) {
+    .AuthButton {
+        font-size: 0.4em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #MainText {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .AuthButton {
+        font-size: 0.3em;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .AuthButton {
+        font-size: 0.25em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #MainText {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    html, body {
+        font-size: x-large;
+    }
+
+    .Subtext {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #MainText {
+        width: 90%;
+    }
+}
